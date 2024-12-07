@@ -1,0 +1,11 @@
+// Show and hide the workout plan details
+document.getElementById("showWorkout").addEventListener("click", function () {
+  const workoutDetails = document.getElementById("workoutDetails");
+  if (workoutDetails.classList.contains("hidden")) {
+    workoutDetails.classList.remove("hidden");
+    this.textContent = "Hide Workout Plan";
+  } else {
+    workoutDetails.classList.add("hidden");
+    this.textContent = "Show Workout Plan";
+  }
+});
